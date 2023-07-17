@@ -1,0 +1,93 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    height:100vh;
+   background-color:rgb(5, 79, 164);
+   font-family:system-ui, 'Segoe UI';
+
+}
+input {
+    width:100%;
+    border:None;
+    outline:None;
+    background-color:#fff;
+    height:30px;
+    padding:30px 10px;
+    font-size:18px;
+    border-radius:5px;
+
+}
+.todos-container {
+    width:50%;
+    margin:50px auto;
+}
+.todos-body {
+    padding:5px;
+    background-color:rgb(120, 32, 120);
+}
+.new-task {
+    position:relative;
+}
+#add {
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    right:10px;
+    background-color:green;
+    padding-top:2px;
+
+}
+button {
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:None;
+    color:#fff;
+    cursor:pointer;
+}
+.todo {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px ;
+    border-bottom:2px solid #ffffff;
+    background-color:rgb(226, 235, 243)
+}
+.completed {
+    background-color:lightgreen !important;
+}
+.todo button {
+    margin-right:30px;
+}
+.todos-actions {
+    display:flex;
+}
+#delete {
+    background-color:tomato;
+    
+}
+#edit {
+    background-color:rgb(52, 131, 181);
+}
+#done {
+    background-color:rgb(71, 209, 71)
+}
+#notdone {
+    background-color:red !important;
+}
+h2.CompletedTask {
+    text-decoration:line-through;
+    font-weight:normal;
+}
+
+@media (max-width:776px) {
+    .todos-container {
+        width:90%;
+    }
+}
